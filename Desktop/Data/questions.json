@@ -1,0 +1,410 @@
+[
+  {
+    "Question": "Which of this is a feature of MS Word that saves the document automatically after certain interval is available on",
+    "A": "Save tab on Options dialog box",
+    "B": "Save As dialogue box",
+    "C": "Both A & B",
+    "D": "None of above",
+    "Correct": "A"
+  },
+  {
+    "Question": "which file starts MS Word",
+    "A": "Winword.exe",
+    "B": "Word.exe",
+    "C": "Msword.exe",
+    "D": "Word2003.exe",
+    "Correct": "A"
+  },
+  {
+    "Question": "How many ways you can save a document?",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "Correct": "A"
+  },
+  {
+    "Question": "Background color or effects applied on a document is not visible in",
+    "A": "Web layout view",
+    "B": "Print Layout view",
+    "C": "Reading View",
+    "D": "Print Preview",
+    "Correct": "D"
+  },
+  {
+    "Question": "What is a portion of a document in which you set certain page formatting options?",
+    "A": "page",
+    "B": "Document",
+    "C": "Section",
+    "D": "Page Setup",
+    "Correct": "C"
+  },
+  {
+    "Question": "Borders can be applied to",
+    "A": "Cells",
+    "B": "Paragraph",
+    "C": "Text",
+    "D": "All of above",
+    "Correct": "D"
+  },
+  {
+    "Question": "Which of the following is not a type of page margin?",
+    "A": "left",
+    "B": "right",
+    "C": "Center",
+    "D": "Top",
+    "Correct": "D"
+  },
+  {
+    "Question": "portrait and landscape are",
+    "A": "page orientation",
+    "B": "paper size",
+    "C": "page layout",
+    "D": "all of the about",
+    "Correct": "D"
+  },
+  {
+    "Question": "portrait and landscape are",
+    "A": "page orientation",
+    "B": "paper size",
+    "C": "page layout",
+    "D": "all of the about",
+    "Correct": "A"
+  },
+  {
+    "Question": "If you need to change the typeface of a document, which menu will you choose?",
+    "A": "Edit",
+    "B": "View",
+    "C": "Format",
+    "D": "Tools",
+    "Correct": "C"
+  },
+  {
+    "Question": "Which of the following is not a font style?",
+    "A": "Bold",
+    "B": "Italics",
+    "C": "Regular",
+    "D": "Superscript",
+    "Correct": "D"
+  },
+  {
+    "Question": "How many columns can you insert in a word document in maximum?",
+    "A": "35",
+    "B": "45",
+    "C": "55",
+    "D": "65",
+    "Correct": "B"
+  },
+  {
+    "Question": "What is the smallest and largest font size available in Font Size tool on   formatting toolbar?",
+    "A": "8 and 72",
+    "B": "8 and 64",
+    "C": "12 and 72",
+    "D": "none of the above",
+    "Correct": "A"
+  },
+  {
+    "Question": "What is the maximum font size you can apply for any character?",
+    "A": "163",
+    "B": "1638",
+    "C": "16038",
+    "D": "none of the above",
+    "Correct": "B"
+  },
+  {
+    "Question": "The keystrokes Ctrl + I is used to",
+    "A": "Increase font size",
+    "B": "Inserts a line break",
+    "C": "Indicate the text should be bold",
+    "D": "Applies italic format to selected text",
+    "Correct": "D"
+  },
+  {
+    "Question": "A character that is raised and smaller above the baseline is known as",
+    "A": "Outlined",
+    "B": "Raised",
+    "C": "Superscript",
+    "D": "Subscript",
+    "Correct": "C"
+  },
+  {
+    "Question": "Material consisting of text and numbers is best presented as",
+    "A": "A table slide",
+    "B": "A bullet slide",
+    "C": "A title slide",
+    "D": "All of the above",
+    "Correct": "A"
+  },
+  {
+    "Question": "In order to edit a chart, you can",
+    "A": "Triple click the chart object",
+    "B": "Click and drag the chart object",
+    "C": "Double click the chart object",
+    "D": "Click the chart object",
+    "Correct": "C"
+  },
+  {
+    "Question": "To exit the PowerPoint",
+    "A": "click the application minimize button",
+    "B": "click the document close button",
+    "C": "double click the applications control menu icon",
+    "D": "double click the document control menu icon",
+    "Correct": "C"
+  },
+  {
+    "Question": "You can create a new presentation by completing all of the following except",
+    "A": "Clicking the new button on the standard toolbar",
+    "B": "Clicking file, new",
+    "C": "Clicking file open",
+    "D": "Pressing ctrl + N",
+    "Correct": "C"
+  },
+  {
+    "Question": "Special effects used to introduce slides in a presentation are called",
+    "A": "effects",
+    "B": "custom animations",
+    "C": "transitions",
+    "D": "present animations",
+    "Correct": "C"
+  },
+  {
+    "Question": "How can you create a uniform appearance by adding a background image to   all slides?",
+    "A": "Create a template",
+    "B": "Edit the slide master",
+    "C": "Use the autocorrect wizard",
+    "D": "All of the above",
+    "Correct": "C"
+  },
+  {
+    "Question": "the slide that is used to introduce a topic and set the tone for the presentation is called the:",
+    "A": "table slide",
+    "B": "graph slide",
+    "C": "bullet slide",
+    "D": "title slide",
+    "Correct": "D"
+  },
+  {
+    "Question": "Which of the following features should you use when typing in the notes text box?",
+    "A": "Slide show",
+    "B": "Insert",
+    "C": "Slide maser",
+    "D": "Zoom",
+    "Correct": "D"
+  },
+  {
+    "Question": "Which of the following should be used when you want to add a slide to an existing presentation?",
+    "A": "File, add a new slide",
+    "B": "Insert, New slide",
+    "C": "File Open",
+    "D": "File, New",
+    "Correct": "B"
+  },
+  {
+    "Question": "which of the following is the default page setup orientation of slide in PowerPoint",
+    "A": "Vertical",
+    "B": "Landscape",
+    "C": "Portrait",
+    "D": "None of above",
+    "Correct": "B"
+  },
+  {
+    "Question": "Which of the following tool enables you to add text to a slide without using the standard placeholders?",
+    "A": "Text tool box",
+    "B": "Line tool",
+    "C": "Drawing tool",
+    "D": "Auto shapes tool",
+    "Correct": "A"
+  },
+  {
+    "Question": "The view that displays the slides on a presentation as miniature representations of the slides is called",
+    "A": "slide show",
+    "B": "slide sorter view",
+    "C": "notes page view",
+    "D": "outline view",
+    "Correct": "B"
+  },
+  {
+    "Question": "The PowerPoint view that displays only text (title and bullets) is",
+    "A": "Slide show",
+    "B": "slide sorter view",
+    "C": "notes page view",
+    "D": "outline view",
+    "Correct": "D"
+  },
+  {
+    "Question": "What are symbols used to identify items in a list?",
+    "A": "Icons",
+    "B": "Markers",
+    "C": "Bullets",
+    "D": "Graphics",
+    "Correct": "C"
+  },
+  {
+    "Question": "In Microsoft PowerPoint the entry effect as one slide replaces another in a show is\r\ncalled a (an)",
+    "A": "animation",
+    "B": "slide transition",
+    "C": "custom animation",
+    "D": "preset animation",
+    "Correct": "B"
+  },
+  {
+    "Question": "Formulas in Excel start with",
+    "A": "%",
+    "B": "=",
+    "C": "+",
+    "D": "--",
+    "Correct": "B"
+  },
+  {
+    "Question": "Which of the following methods will not enter data in a cell?",
+    "A": "Pressing the Esc key",
+    "B": "Pressing an arrow key",
+    "C": "Pressing the tab key",
+    "D": "Clicking the enter button to the formula bar",
+    "Correct": "A"
+  },
+  {
+    "Question": "The cell reference for cell range of G2 to M12 is _______",
+    "A": "G2.M12",
+    "B": "G2;M12",
+    "C": "G2:M12",
+    "D": "G2-M12",
+    "Correct": "C"
+  },
+  {
+    "Question": "The Software which contains rows and columns is called ______",
+    "A": "Database",
+    "B": "Drawing",
+    "C": "Spreadsheet",
+    "D": "Word processing",
+    "Correct": "C"
+  },
+  {
+    "Question": "Merge cells option can be applied from",
+    "A": "Format Cells dialog box Alignment Tab",
+    "B": "Formatting toolbar",
+    "C": "Both of above",
+    "D": "None of above",
+    "Correct": "A"
+  },
+  {
+    "Question": "Which function will you use to enter current time in a worksheet cell?",
+    "A": "=today()",
+    "B": "=now()",
+    "C": "=time()",
+    "D": "=currentTime()",
+    "Correct": "B"
+  },
+  {
+    "Question": "How can you remove borders applied in cells?",
+    "A": "Choose None on Border tab of Format cells",
+    "B": "Open the list on Border tool in Formatting toolbar then choose first tool (no   \r\nborder)",
+    "C": "Both A & B",
+    "D": "None of above",
+    "Correct": "C"
+  },
+  {
+    "Question": "You can set Page Border in Excel from",
+    "A": "From Border tab in Format Cells dialog box",
+    "B": "From Border tool in Formatting toolbar",
+    "C": "From Line Style tool in Drawing toolbar",
+    "D": "You cannot set page border in Excel",
+    "Correct": "D"
+  },
+  {
+    "Question": "Which of the following is invalid statement?",
+    "A": "Sheet tabs can be colored",
+    "B": "Some picture can be applied as a background of a sheet",
+    "C": "You can set the column width automatically fit the amount of text",
+    "D": "The width of a row and be specified manually or fit automaticallyl",
+    "Correct": "D"
+  },
+  {
+    "Question": "You can auto fit the width of column by",
+    "A": "double clicking on the column name on column header",
+    "B": "Double click on the cell pointer in worksheet",
+    "C": "Double clicking on column right border on column header",
+    "D": "Double clicking on the column left border of column header",
+    "Correct": "C"
+  },
+  {
+    "Question": "Long text can be broken down into many lines within a cell. You can do this through",
+    "A": "Wrap Text in Format >> Cells\r\nJustify in Edit >> Cells",
+    "B": "Text Wrapping in Format >> Cells,",
+    "C": "Layout tab",
+    "D": "All of above",
+    "Correct": "A"
+  },
+  {
+    "Question": "Ctrl + D shortcut key in Excel will",
+    "A": "Wrap Text in Format >> Cells",
+    "B": "Justify in Edit >> Cells",
+    "C": "Text Wrapping in Format >> Cells,",
+    "D": "All of above",
+    "Correct": "C"
+  },
+  {
+    "Question": "The short cut key Ctrl + R is used in Excel to",
+    "A": "Right align the content of cell",
+    "B": "Remove the cell contents of selected cells",
+    "C": "Fill the selection with active cells to the right",
+    "D": "None of above",
+    "Correct": "C"
+  },
+  {
+    "Question": "Edit >> Delete command",
+    "A": "Deletes the content of a cell",
+    "B": "Deletes Formats of cell",
+    "C": "Deletes the comment of cell",
+    "D": "Deletes selected cells",
+    "Correct": "D"
+  },
+  {
+    "Question": "To remove the content of selected cells you must issue ______ command",
+    "A": "Edit >> Delete",
+    "B": "Edit >> Clear >> Contents",
+    "C": "Edit >> Clear >> All",
+    "D": "Data >> Delete",
+    "Correct": "B"
+  },
+  {
+    "Question": "By default Excel provides 3 worksheets. You need only two of them, how will \r\nyou delete the third one?",
+    "A": "Right click on Sheet Tab of third sheet and choose Delete from the context  \r\nmenu",
+    "B": "Click on Sheet 3 and from Edit menu choose Delete",
+    "C": "Both of above",
+    "D": "None of above",
+    "Correct": "A"
+  },
+  {
+    "Question": "Which of the following action removes a sheet from workbook?",
+    "A": "Select the sheet, then choose Edit >> Delete Sheet",
+    "B": "Select the sheet then choose Format >> Sheet >> Hide",
+    "C": "Both of above",
+    "D": "None of above",
+    "Correct": "A"
+  },
+  {
+    "Question": "While Finding and Replacing some data in Excel, which of the following \r\nstatement is valid?",
+    "A": "You can Find and Replace within the sheet or workbook",
+    "B": "Excel does not have option to match case for find",
+    "C": "Both are valid",
+    "D": "None are valid",
+    "Correct": "A"
+  },
+  {
+    "Question": "Which of the following is not true about Find and Replace in Excel",
+    "A": "You can search for bold and replace with italics",
+    "B": "You can decide whether to look for the whole word or not",
+    "C": "You can search in formula too",
+    "D": "You can search by rows or columns or sheets",
+    "Correct": "D"
+  },
+  {
+    "Question": "A function inside another function is called _______",
+    "A": "Nested function",
+    "B": "Round function",
+    "C": "Sum function",
+    "D": "Text function",
+    "Correct": "A"
+  }
+]
