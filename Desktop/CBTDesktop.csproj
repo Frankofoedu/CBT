@@ -50,9 +50,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo2.jpg.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\OneDrive\Visual studio\SentimentAnalysis\SentimentAnalysis\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive\Visual studio\SentimentAnalysis\SentimentAnalysis\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -162,6 +165,8 @@
       <DependentUpon>NewUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\CBT\Data\users.json" />
+    <Content Include="Images\logo2.jpg.ico" />
+    <Content Include="logo2.jpg.ico" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

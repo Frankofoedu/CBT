@@ -26,6 +26,7 @@ namespace rating.UI
         public ExamControl()
         {
             InitializeComponent();
+
             if (LicenseManager.UsageMode != LicenseUsageMode.Designtime)
             {
                 backgroundWorker1.RunWorkerAsync();
@@ -51,7 +52,7 @@ namespace rating.UI
                 {
                     //var userAnswers = JsonConvert.DeserializeObject<UserAnswers>(File.ReadAllText(UserResultPath));
 
-                    Answers = JsonConvert.DeserializeObject<UserAnswers>(File.ReadAllText(UserResultPath)).QuestionAndAnswers;
+                    Answers = JsonConvert.DeserializeObject<User>(File.ReadAllText(UserResultPath)).QuestionAndAnswers;
                     //  _ticks = Constants.User.TimeLeft;
                 }
                 else
@@ -170,11 +171,13 @@ namespace rating.UI
 
         private async Task SubmitAnswersAsync()
         {
+            Cursor = Cursors.WaitCursor;
             try
             {
+                var u = Constants.User;
+                u.QuestionAndAnswers = Answers;
 
-                var savedAnswers = new UserAnswers { User = Constants.User, QuestionAndAnswers = Answers };
-                var str = JsonConvert.SerializeObject(savedAnswers);
+                var str = JsonConvert.SerializeObject(u);
 
                 var users = User.GetAllUsers();
 
@@ -187,30 +190,35 @@ namespace rating.UI
 
                 File.WriteAllText(UserResultPath, str);
 
-                //using (var client = new HttpClient())
-                //{
-                //    var response = await client.PostAsync("https://cbt.insyt.com.ng/api/UserAnswers", new StringContent(str, Encoding.UTF8, "application/json"));
-                    
-                //    if (response.IsSuccessStatusCode)
-                //    {
-                //        //log information
-                //    }
-                //}
+                using (var client = new HttpClient())
+                {
+                    var response = await client.PostAsync("http://cbt.insyt.com.ng/api/UserAnswers", new StringContent(str, Encoding.UTF8, "application/json"));
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("The exam has ended. Thank You.");
+                        
+                        Dispose();
+                    }
+                    else
+                    {
+                        logger.Error($"Data not sent to server for {Constants.User.Email}");
+                    }
+                }
 
                 MessageBox.Show("The exam has ended. Thank You.");
 
                 Dispose();
             }
 
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.Error(ex.ToString());
 
-                throw;
+                MessageBox.Show("An error occured. Please contact the Admin");
             }
 
-
-
-
+            Cursor = Cursors.Default;
         }
 
         private void SelectRad(string answer)
