@@ -25,6 +25,7 @@ namespace rating.UI
             {
                 if (password == "ADMIN1234")
                 {
+                    txtNumber.Text = "";
                     var f = new Admin.AdminPanel(true);
 
 
@@ -56,6 +57,7 @@ namespace rating.UI
         }
         void CheckUserAdmin(User u)
         {
+            txtNumber.Text = "";
             if (u.isAdmin)
             {
                 var f = new Admin.AdminPanel(false);
