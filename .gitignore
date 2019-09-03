@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/PDFCertGen
+/CBTWebAPI/files8.zip
