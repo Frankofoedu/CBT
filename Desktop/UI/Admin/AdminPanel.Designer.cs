@@ -32,14 +32,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbCentre = new System.Windows.Forms.ComboBox();
+            this.cmbZone = new System.Windows.Forms.ComboBox();
             this.btnAddAdmin = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnSyncResults = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.cmbZone = new System.Windows.Forms.ComboBox();
-            this.cmbCentre = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -92,11 +93,51 @@
             this.panel2.Controls.Add(this.btnAddAdmin);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnSyncResults);
             this.panel2.Controls.Add(this.btnRegister);
             this.panel2.Location = new System.Drawing.Point(18, 82);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(706, 356);
             this.panel2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(32, 230);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Zone";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 291);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Centre";
+            // 
+            // cmbCentre
+            // 
+            this.cmbCentre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbCentre.FormattingEnabled = true;
+            this.cmbCentre.Location = new System.Drawing.Point(35, 314);
+            this.cmbCentre.Name = "cmbCentre";
+            this.cmbCentre.Size = new System.Drawing.Size(293, 21);
+            this.cmbCentre.TabIndex = 10;
+            // 
+            // cmbZone
+            // 
+            this.cmbZone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbZone.FormattingEnabled = true;
+            this.cmbZone.Location = new System.Drawing.Point(35, 257);
+            this.cmbZone.Name = "cmbZone";
+            this.cmbZone.Size = new System.Drawing.Size(293, 21);
+            this.cmbZone.TabIndex = 9;
+            this.cmbZone.SelectionChangeCommitted += new System.EventHandler(this.CmbZone_SelectionChangeCommitted);
             // 
             // btnAddAdmin
             // 
@@ -111,6 +152,7 @@
             this.btnAddAdmin.Tag = "3";
             this.btnAddAdmin.Text = "Add Admin";
             this.btnAddAdmin.UseVisualStyleBackColor = false;
+            this.btnAddAdmin.Visible = false;
             this.btnAddAdmin.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button3
@@ -121,7 +163,7 @@
             this.button3.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(369, 257);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 78);
+            this.button3.Size = new System.Drawing.Size(130, 78);
             this.button3.TabIndex = 7;
             this.button3.Tag = "3";
             this.button3.Text = "Sync User Data";
@@ -141,7 +183,23 @@
             this.button2.Tag = "2";
             this.button2.Text = "View All Students";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // btnSyncResults
+            // 
+            this.btnSyncResults.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSyncResults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(159)))), ((int)(((byte)(237)))));
+            this.btnSyncResults.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSyncResults.Font = new System.Drawing.Font("Palatino Linotype", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSyncResults.Location = new System.Drawing.Point(526, 257);
+            this.btnSyncResults.Name = "btnSyncResults";
+            this.btnSyncResults.Size = new System.Drawing.Size(141, 78);
+            this.btnSyncResults.TabIndex = 5;
+            this.btnSyncResults.Tag = "1";
+            this.btnSyncResults.Text = "Send Results To Server";
+            this.btnSyncResults.UseVisualStyleBackColor = false;
+            this.btnSyncResults.Click += new System.EventHandler(this.BtnSyncResults_Click);
             // 
             // btnRegister
             // 
@@ -156,46 +214,8 @@
             this.btnRegister.Tag = "1";
             this.btnRegister.Text = "Register Students";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Visible = false;
             this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
-            // 
-            // cmbZone
-            // 
-            this.cmbZone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbZone.FormattingEnabled = true;
-            this.cmbZone.Location = new System.Drawing.Point(35, 257);
-            this.cmbZone.Name = "cmbZone";
-            this.cmbZone.Size = new System.Drawing.Size(293, 21);
-            this.cmbZone.TabIndex = 9;
-            this.cmbZone.SelectionChangeCommitted += new System.EventHandler(this.CmbZone_SelectionChangeCommitted);
-            // 
-            // cmbCentre
-            // 
-            this.cmbCentre.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbCentre.FormattingEnabled = true;
-            this.cmbCentre.Location = new System.Drawing.Point(35, 314);
-            this.cmbCentre.Name = "cmbCentre";
-            this.cmbCentre.Size = new System.Drawing.Size(293, 21);
-            this.cmbCentre.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 291);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Centre";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 230);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Zone";
             // 
             // AdminPanel
             // 
@@ -225,5 +245,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbCentre;
         private System.Windows.Forms.ComboBox cmbZone;
+        private System.Windows.Forms.Button btnSyncResults;
     }
 }

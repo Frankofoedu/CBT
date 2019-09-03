@@ -90,17 +90,22 @@ namespace rating.UI.Admin
             {
                 
                 Cursor = Cursors.WaitCursor;
-                var response = await client.GetAsync("http://cbt.insyt.com.ng/api/Users?centre="+ centre.ToString());//, new StringContent(str, Encoding.UTF8, "application/json"));
+                var response = await client.GetAsync("http://cbt.insyt.com.ng/api/UsersByCentre/" + centre.ToString());//, new StringContent(str, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonObject = await response.Content.ReadAsStringAsync();
 
                     var users = JsonConvert.DeserializeObject<List<User>>(jsonObject);
+                    if (users.Count < 1)
+                    {
+                        MessageBox.Show("No users registered");
+                        return;
+                    }
 
                     File.WriteAllText(Constants.userPath, jsonObject);
 
-                    Cursor = Cursors.Default;
+                   
                     MessageBox.Show("User data has been collected");
 
                 }
@@ -114,7 +119,7 @@ namespace rating.UI.Admin
                 logger.Error(ex.ToString());
                 MessageBox.Show("An error occured with the network. Please try again");            
             }
-           
+            Cursor = Cursors.Default;
         }
 
         private void CmbZone_SelectionChangeCommitted(object sender, EventArgs e)
@@ -128,6 +133,45 @@ namespace rating.UI.Admin
                 cmbCentre.DataSource = centres;
             }
 
+        }
+
+        private async void BtnSyncResults_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.WaitCursor;
+           var results = Directory.EnumerateFiles(Constants.ResultFolderPath);
+
+            if (results != null)
+            {
+                int i = 0;
+                int j = 0;
+                foreach (var resultFile in results)
+                {
+                    var result = File.ReadAllText(resultFile);
+
+                    using (var client = new HttpClient())
+                    {
+                        var response = await client.PostAsync("http://cbt.insyt.com.ng/api/UserAnswers", new StringContent(result, Encoding.UTF8, "application/json"));
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            i++;
+                        }
+                        else
+                        {
+                            j++;
+                        }
+                    }
+
+                   
+                }
+                MessageBox.Show($"{i.ToString()} Results sent. {j.ToString()} failed");
+            }
+            else
+            {
+                MessageBox.Show("No results in this system");
+            }
+
+            Cursor = Cursors.Default;
         }
     }
 }
