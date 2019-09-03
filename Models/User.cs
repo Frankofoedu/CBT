@@ -46,6 +46,8 @@ namespace rating.Data
         public int TimeLeft { get; set; }
         public bool isAdmin { get; set; }
 
+        public virtual List<QuestionAndAnswer> QuestionAndAnswers { get; set; }
+
 
         public static List<User> GetAllUsers()
         {

@@ -60,16 +60,7 @@ namespace rating.Data
         public string Question { get; set; }
         public string Answer { get; set; }
         public string CorrectAnswer { get; set; }
+      
     }
 
-    public class UserAnswers
-    {
-        public int Id { get; set; }
-        [Required]
-        public User User { get; set; }
-
-        public string TimeLeft { get; set; }
-        public bool isDone { get; set; }
-        public List<QuestionAndAnswer> QuestionAndAnswers { get; set; }
-    }
 }
